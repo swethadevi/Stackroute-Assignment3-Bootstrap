@@ -1,110 +1,255 @@
 <!DOCTYPE html>
-<!--
-Developed by: Swetha Devi D	
-Contact : swetha96devi@gmail.com
-Built for : NIIT Stackroute trainee UI Portfolio  Website using  bootstrap 
-Date : 11/12/2018
-Files : index.html, css/style.css
--->
-  <!-- Meta links -->
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
-  <title>Welcome to the portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Portfolio" content="This is a portfolio website using bootstrap technology.This the main index page, where links to other pages can be found here like the various Achievements ,projects undertaken and etc.">
-  <!-- Stylesheet links ../css -->
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <body>
-    <!-- Navigation bar section  -->
-    <div class="main-nav">
-      <ul class="nav">
-        <li class="name">Swetha Devi</li>
-        <li class ="name"><img src="img/profile.jpg" alt="logo" style="width:40px;"><li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Passion</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <!-- Header section for the navigation bar -->
-    <header>
-      <img src="img/profile.jpg" alt="a picture of swetha" class="profile-image">
-      <h1 class="tag name">Swetha Devi</h1>
-      <h2 class="pitch"> Passionate | Promising | Engaging </h2>
-    </header>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Swetha Devi Portfolio Website</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <!-- carousel effect -->
-      <div id="demo" class="carousel slide" data-ride="carousel">
+<body>
+  <!-- header -->
+  <header>
+    <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+          <img src="img/profile.jpg" height="30" alt="mdb logo">
+      </a>
 
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
+    
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+    
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="achieve.html">Achievements</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+          </li>
           
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/pess.jpg" alt="Pes" width="1100" height="500">
+    
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Contact_Swetha</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Github</a>
+              <a class="dropdown-item" href="#">Slack</a>
+              <a class="dropdown-item" href="#">Gmail</a>
             </div>
-            <div class="carousel-item">
-              <img src="img/sjp.jpg" alt="sjp" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-              <img src="img/joseph.jpeg" alt="st.josephs" width="1100" height="500">
-            </div>
+          </li>
+    
+        </ul>
+        <!-- Links -->
+    
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           </div>
-          
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+        </form>
+      </div>
+      <!-- Collapsible content -->
+    </div>    
+  </nav>
+  <!--/.Navbar-->
+  <!-- Background image mask  -->
+  <div id="intro" class="view hm-black-strong">
+    <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 text-center">
+          <!-- Heading -->
+          <h2 class="display-3 font-bold white-text mb-2">SWETHA DEVI </h2>
+
+          <!-- Divider -->
+          <hr class="hr-light">
+
+          <!-- Description -->
+          <h4 class="white-text my-4">Welcome to my Portfolio !!! Explore My profile,Thank you!</h4>
+          <button type="button" class="btn btn-outline-white">Explore more<i class="fa fa-book ml-2"></i></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </header>
+  <!-- main -->
+  <main class="mt-5">
+    <div class="contaier">
+      <!-- Section container Using the Flex property of bootstrap-->
+      <section id="About" class="text-center">
+        <h2 class="mb-4 font-weight-bold">About</h2>
+        <div class="row d-flex justify-content-center mb-4">
+         <article>
+            <p>I'm an young graduated student and now im working in boeing company always interested and passionate about the creative things. Success a major factor that i always wish for. PES university my stepping stone to succes who alwayz motivated me and made the person who i am todaay.Wishing all the best for all of you.</p>
+         </article> 
+        </div>
+      </div>
+
+      <!-- This section describes the various Projects that i have undertaken -->
+      <!-- Row Grid -->
+      <div class="row">
+        <!-- column grid -->
+        <div class="col-md-4 md-4" class="text-center" >
+          <i class="fa fa-address-card fa-4x orange-text"></i>
+          <h4 class="my-4 font-weight-bold">Machine Learning Project</h4>
+          <article>
+            <p>Machine Learning Based "IMAGE DESCRIPTION USING CNN": This is a Machine Learning project. In this project given an input image it transfers it into a English language textual description. we have used the CNN for the object recognition and have made it possible to extract high level image information. We have implemented the model of VGG16,this model is used for prediction and feature extraction. he given code. Technologies : CNN,VGG16,Python</p>
+          </article>
         </div>
 
-      <!-- Use of the flex cards in bootstrap for the projects card -->
-      <main class="flex">
-        <div class="card">
-          <h2 class="card-title">My Background</h2>
-          <ul>
-            <li>I’m an aspiring web designer who loves everything about the web. I have been doing this for about five months, and love it to bits!</li>
-            <li>I’m excited to bring my life experience to the process of building fantastic looking websites.</li>
-            <li>I'm young, conciencious and hard- working and am a life-long learner who's always interested in expanding my skills and confidence.</li>
-            <li>To learn more, <a href="resume.html">view my resume.</a></li>
-          </ul>
+        <div class="col-md-4 md-4">
+          <i class="fa fa-address-book  fa-4x orange-text"></i>
+          <h4 class="my-4 font-weight-bold">Web Technology Project</h4>
+          <article>
+            <p>Web Tech based "LIVE CRICKET SCORE UPDATE" This is a Website exclusively for the game of cricket , website using AJAX ,JavaScript, jQuery ,Web service(API) for front-end and used PHP for back-end. Ajax techniques are used to make requests to the server. We built a real time Cricket score and Commentary updating site which also gives information about the schedules, past records and events with current news. Designed UI using bootstrap to navigate to support all platforms</p>
+          </article>
         </div>
 
-        <div class="card">
-          <h2 class="card-title">Goals</h2>
+        <div class="col-md-4 md-4">
+          <i class="fa fa-cloud-upload fa-4x orange-text"></i>
+          <h4 class="my-4 font-weight-bold">DATABASE Project</h4>
           <article>
-            <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
-          </article>
-            <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>REST Api</li>
-            <li>PHP</li>
-          </ul>
-          <article>
-            <p>My goals in the future, are to be able to run my own company, and create awesome web based products that people would love to use.</p>
+            <p>DBMS based "HOSPITAL MANAGEMENT":This is a DBMS based project where in this we maintained the hospital details, patient records in a database. MySQL is used where the hospital details, patients record are stored in the database. The database is controlled over the server using the PHP in the backend, and Html in the User Interface</p>
           </article>
         </div>
-      </main>
-      <!-- Footer Section for the social media icons and links to contact -->
-      <footer>
-          <a href="https://twitter.com/swethadevid" class="fa fa-twitter fa-black"></a>
-          <a href="Images/Swetha_Devi__D.pdf"> <i class="fas fa-file-alt fa-lg"></i></a>
-          <a href="https://github.com/swethadevi" class="fa fa-github fa-black"></a>
-          <a href="https://linkedin.com/in/swethadevid" class="fa fa-linkedin fa-black"></a>
-        <p class="copyright">Copyright 2018, Swetha Devi | <a href="privacy.html">Privacy Policy</p>
-      </footer>
-  </body>
+      </div>
+    </section>
+
+    <!-- Section for the different colleges i have studied -->
+      <hr class="my-5">
+      <section id="Projects">
+        <div class="row">
+          <div class="col-lg-4  col-md-12 mb-4">
+            <div class="view overlay hm-white-slight z-depth-1-half">
+              <img src="img/pes.jpg" class="img-fluid" alt="PES college">
+              <div class="mask"></div>
+            </div>
+            <h4 class="my-4 font-weight-bold">PES UNIVERSITY</h4>
+            <p>PES university top 6th Enginnering college in India.I completed my B.Tech and graduated from this Institute its the best Place for the Better future.Its the Best Educational Institute </p>
+          </div>
+
+          <div class="col-lg-4  col-md-6 mb-4">
+            <div class="view overlay hm-white-slight z-depth-1-half">
+              <img src="img/sjp.jpg" class="img-fluid" alt="PES college">
+                <div class="mask"></div>
+            </div>
+            <h4 class="my-4 font-weight-bold">SJP Polytechnic</h4>
+          <p>This is the Diploma Polytechnic College:I completed my diploma in computer science from this institute.Got good Practical knowledge on various aspects of programming language and computer skills.</p>
+          </div>
+
+          <div class="col-lg-4  col-md-6 mb-4">
+            <div class="view overlay hm-white-slight z-depth-1-half">
+              <img src="img/joseph.jpeg" class="img-fluid" alt="st josephs school">
+                <div class="mask"></div>
+            </div>
+            <h4 class="my-4 font-weight-bold">St.Josephs Convent</h4>
+            <p> I did my schooling at St.Josephs' Convent. My school motto is "Always Our Best". Everytime i read this motto it inspires me on all aspects and it really motivated me to achieve my Goals. </p>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <hr class="my-5">
+      <section id="Experience">
+      </section>
+      <hr class="my-5">
+
+      
+    </div>
+  </main>
+<!-- footer .The end of the page-->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic" href="https://www.facebook.com/profile.php?id=100010341586611">
+              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic" href="https://twitter.com/swethadevid">
+              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic" href="https://plus.google.com/u/0/111153200301353874531">
+              <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic"href="https://github.com/swethadevi">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright | Swetha Devi D 
+    </div>
+  </footer>
+
+
+  
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
 </html>
