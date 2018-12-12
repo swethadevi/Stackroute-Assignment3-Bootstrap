@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+Developed by: Swetha Devi D	
+Contact : swetha96devi@gmail.com
+Built for : NIIT Stackroute trainee UI Portfolio  Website using  bootstrap 
+Date : 11/12/2018
+Files : index.html, css/style.css
+-->
+  <!-- Meta links -->
+  <meta charset="utf-8">
+  <title>Welcome to the portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Portfolio" content="This is a portfolio website using bootstrap technology.This the main index page, where links to other pages can be found here like the various Achievements ,projects undertaken and etc.">
+  <!-- Stylesheet links ../css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <!-- Navigation bar section  -->
+    <div class="main-nav">
+      <ul class="nav">
+        <li class="name">Swetha Devi</li>
+        <li class ="name"><img src="img/profile.jpg" alt="logo" style="width:40px;"><li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Passion</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Header section for the navigation bar -->
+    <header>
+      <img src="img/profile.jpg" alt="a picture of swetha" class="profile-image">
+      <h1 class="tag name">Swetha Devi</h1>
+      <h2 class="pitch"> Passionate | Promising | Engaging </h2>
+    </header>
+
+    <!-- carousel effect -->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/pess.jpg" alt="Pes" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="img/sjp.jpg" alt="sjp" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="img/joseph.jpeg" alt="st.josephs" width="1100" height="500">
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+      <!-- Use of the flex cards in bootstrap for the projects card -->
+      <main class="flex">
+        <div class="card">
+          <h2 class="card-title">My Background</h2>
+          <ul>
+            <li>I’m an aspiring web designer who loves everything about the web. I have been doing this for about five months, and love it to bits!</li>
+            <li>I’m excited to bring my life experience to the process of building fantastic looking websites.</li>
+            <li>I'm young, conciencious and hard- working and am a life-long learner who's always interested in expanding my skills and confidence.</li>
+            <li>To learn more, <a href="resume.html">view my resume.</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Goals</h2>
+          <article>
+            <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+          </article>
+            <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>REST Api</li>
+            <li>PHP</li>
+          </ul>
+          <article>
+            <p>My goals in the future, are to be able to run my own company, and create awesome web based products that people would love to use.</p>
+          </article>
+        </div>
+      </main>
+      <!-- Footer Section for the social media icons and links to contact -->
+      <footer>
+          <a href="https://twitter.com/swethadevid" class="fa fa-twitter fa-black"></a>
+          <a href="Images/Swetha_Devi__D.pdf"> <i class="fas fa-file-alt fa-lg"></i></a>
+          <a href="https://github.com/swethadevi" class="fa fa-github fa-black"></a>
+          <a href="https://linkedin.com/in/swethadevid" class="fa fa-linkedin fa-black"></a>
+        <p class="copyright">Copyright 2018, Swetha Devi | <a href="privacy.html">Privacy Policy</p>
+      </footer>
+  </body>
+</html>
